@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Library System UI</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+        <div class="title">
+            <p>Library System</p>
+        </div>
+        <div class="nav-items">
+            <a href=".books">Books</a>
+            <a href=".register">Register</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Logout</a>
+        </div>
+    </nav>
+    <main>
+      <section class="books">
+          <h2>
+            Books
+          </h2>
+          <table class="main-table">
+            <tr class="rows">
+                <th class="cols">Book ID</th>
+                <th class="cols">Title</th>
+                <th class="cols">Author</th>
+                <th class="cols">Genre</th> 
+                <th class="cols">Availability</th>
+            </tr>
+            <tr class="rows">
+                <td class="cols">1</td>
+                <td class="cols">
+                  <a href="">Book 1</a>
+                  <table class="nest-table">
+                    <tr class="nest-rows">
+                      <td class="nest-cols" colspan="3">Publication Date: 2000</td>
+                    </tr>
+                    <tr class="nest-rows">
+                      <td class="nest-cols" colspan="3">Page Count: 250</td>
+                    </tr>
+                    <tr class="nest-rows">
+                      <td class="nest-cols" colspan="3">ISBN: 123-4569884323</td>
+                    </tr>
+                  </table>
+                </td>
+                <td class="cols">Author Name 1</td>
+                <td class="cols">Genre 1</td>
+                <td class="cols">Available</td>
+            </tr>
+            <tr class="rows">
+                <td class="cols">2</td>
+                <td class="cols">
+                  <a href="">Book 2</a>
+                  <table class="nest-table">
+                    <tr class="nest-rows">
+                      <td class="nest-cols"  colspan="3">Publication Date: 2005</td>
+                    </tr>
+                    <tr class="nest-rows">
+                      <td class="nest-cols"  colspan="3">Page Count: 300</td>
+                    </tr>
+                    <tr class="nest-rows">
+                      <td class="nest-cols"  colspan="3">ISBN: 123-4569884323</td>
+                    </tr>
+                  </table>
+                </td>
+                <td class="cols">Author Name 1</td>
+                <td class="cols">Genre 2</td>
+                <td class="cols">Not Available</td>
+            </tr>
+            <tr class="rows">
+                <td class="cols">3</td>
+                <td class="cols">
+                  <a href="">Book 3</a>
+                  <table class="nest-table">
+                    <tr class="nest-rows">
+                      <td class="nest-cols" colspan="3">Publication Date: 2010</td>
+                    </tr>
+                    <tr class="nest-rows">
+                      <td class="nest-cols" colspan="3">Page Count: 350</td>
+                    </tr>
+                    <tr class="nest-rows">
+                      <td class="nest-cols" colspan="3">ISBN: 123-4569884323</td>
+                    </tr>
+                  </table>
+                </td>
+                <td class="cols">Author Name 1</td>
+                <td class="cols">Genre 3</td>
+                <td class="cols">Available</td>
+            </tr>
+            <tr class="rows">
+              <td class="cols">4</td>
+              <td class="cols">
+                <a href="#">Book 4</a>
+                <table class="nest-table">
+                  <tr class="nest-rows">
+                    <td class="nest-cols" colspan="3">Publication Date: 2015</td>
+                  </tr>
+                  <tr class="nest-rows">
+                    <td class="nest-cols" colspan="3">Page Count: 335</td>
+                  </tr>
+                  <tr class="nest-rows">
+                    <td class="nest-cols" colspan="3">ISBN: 123-4569884323</td>
+                  </tr>
+                </table>
+              </td>
+              <td class="cols">Author Name 4</td>
+              <td class="cols">Genre 4</td>
+              <td class="cols">Not Available</td>
+            </tr>
+          </table>
+      </section>
+      <section class="register">
+          <h2>Register</h2>
+          <form class="reg-form" action="#" method="post">
+            <label for="fname">First Name:</label><br>
+            <input type="text" name="fname" id="fname" required>
+            <br>
+            <label for="lname">Last Name:</label><br>
+            <input type="text" name="lname" id="lname" required>
+            <br>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" name="dob" id="dob" required>
+            <br>
+            <label for="age">Age:</label><br>
+            <input type="number" name="age" id="age" min="5" max="100" required>
+            <br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="password">Password:</label><br>
+            <input type="password" name="password" id="password" pattern="(?<!\d)\d{5}(?!\d)" required>
+            <br>
+            <label for="password">Confirm Password:</label><br>
+            <input type="password" name="password" id="password" pattern="(?<!\d)\d{5}(?!\d)" required>
+            <br>
+            <input type="submit" value="Register" class="button">
+          </form>
+      </section>
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>

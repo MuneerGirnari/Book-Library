@@ -1,0 +1,104 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgb(216, 116, 116);
+}
+
+.navbar{
+    color: #ffff;
+    background: #000;
+    font-size: 12px;
+    position: sticky;
+    top: 0px;
+    height: 50px;
+    padding: 0px 20px;
+}
+
+.title p{
+    float: left;
+    margin: 15px 0px;
+}
+
+.nav-items{
+    float: right;
+    margin: 15px 0px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    color: #ffff;
+    padding: 0px 10px;
+}
+
+.main-table,.rows,.cols,.nest-table,.nest-rows,.nest-cols{
+    border: 1px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding: 8px;
+}
+
+.books, .register{
+    background-color: rgb(255, 255, 255);
+    padding: 25px 15px 5px;
+    margin: 30px 22%;
+    border-radius: 5px;
+    
+}
+
+.books:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+    cursor: pointer;
+}
+
+.books .main-table{
+    margin: 15px 0px;
+    width: 100%;
+}
+
+th{
+    text-align:left;
+}
+
+.nest-table{
+    margin-top: 10px;
+    width: 100%;
+}
+
+.register:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+input{
+    border: 1px solid lightgrey;
+    width: 100%;
+}
+
+input:hover{
+    background-color: lightgrey;
+    border-radius: 5px;
+}
+
+.button{
+    width: 100%;
+    margin-top: 20px;
+    padding: 5px;
+    color: white;
+    background-color: black;
+}
+
+.button:hover{
+    background-color: rgb(216, 116, 116);
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+}
+
+.details{
+    padding: 10px 0px 20px;
+}
+
