@@ -67,6 +67,19 @@ body{
     width: 100%;
 }
 
+.reg-form{
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+
+.form-controller{
+    margin: 15px 10px;
+}
+
+.register h2{
+    margin-left: 9px;
+}
+
 .register:hover{
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
@@ -80,10 +93,6 @@ input{
 input:hover{
     background-color: lightgrey;
     border-radius: 5px;
-}
-
-.form-controller{
-    margin: 10px 10px;
 }
 
 .button{
