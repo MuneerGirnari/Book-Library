@@ -115,6 +115,17 @@ input[type="text"]:focus, input[type="email"]:focus{
 }
 
 .top-btn{
-    margin: 40px;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    left: 10px;
+}
+
+.top-btn img{
+    width: 15px;
+    margin: 9px 10px;
 }
 
